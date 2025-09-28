@@ -1,1 +1,1 @@
-import "./build/runWorkflow.js";
+﻿import './dist/runWorkflow.js'
