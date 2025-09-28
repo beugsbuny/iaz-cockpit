@@ -1,0 +1,24 @@
+import { generateAndPublishImage } from "./workflows/generateImage.js";
+import { createVoiceFile } from "./workflows/createVoice.js";
+import { findRelatedVideos } from "./workflows/pushToYouTube.js";
+import { fetchGumroadSales } from "./workflows/sellOnGumroad.js";
+import { createCharge } from "./workflows/chargeWithStripe.js";
+(async () => {
+    const prompt = "Créer une méditation guidée visuelle et vocale pour la sérénité";
+    console.log("🧠 Génération de l'image IA...");
+    const imageUrl = await generateAndPublishImage(prompt);
+    console.log("✅ Image publiée sur Canva :", imageUrl);
+    console.log("🎙️ Génération de la voix IA...");
+    const voicePath = await createVoiceFile(prompt);
+    console.log("✅ Fichier audio créé :", voicePath);
+    console.log("📺 Recherche de vidéos YouTube associées...");
+    const videos = await findRelatedVideos("méditation sérénité");
+    console.log("✅ Suggestions YouTube :", videos);
+    console.log("🛒 Vérification des ventes Gumroad...");
+    const sales = await fetchGumroadSales();
+    console.log("✅ Ventes Gumroad :", sales);
+    console.log("💳 Création d’un paiement Stripe...");
+    const paymentSecret = await createCharge(990); // 9.90€
+    console.log("✅ Paiement prêt :", paymentSecret);
+    console.log("🚀 Cockpit IA exécuté avec succès.");
+})();

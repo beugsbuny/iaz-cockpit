@@ -1,8 +1,8 @@
-import { generateAndPublishImage } from "./workflows/generateImage";
-import { createVoiceFile } from "./workflows/createVoice";
-import { findRelatedVideos } from "./workflows/pushToYouTube";
-import { fetchGumroadSales } from "./workflows/sellOnGumroad";
-import { createCharge } from "./workflows/chargeWithStripe";
+import { generateAndPublishImage } from "./workflows/generateImage.js";
+import { createVoiceFile } from "./workflows/createVoice.js";
+import { findRelatedVideos } from "./workflows/pushToYouTube.js";
+import { fetchGumroadSales } from "./workflows/sellOnGumroad.js";
+import { createCharge } from "./workflows/chargeWithStripe.js";
 
 (async () => {
   const prompt = "Créer une méditation guidée visuelle et vocale pour la sérénité";
