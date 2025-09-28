@@ -9,4 +9,6 @@ COPY . .
 
 RUN npm run build
 
-CMD ["node", "dist/runWorkflow.js"]
+ENV PORT=3000
+EXPOSE 3000
+CMD ["node", "server.js"]

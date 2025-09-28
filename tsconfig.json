@@ -1,17 +1,17 @@
-﻿{
-    "compilerOptions":  {
-                            "target":  "ES2020",
-                            "module":  "ESNext",
-                            "moduleResolution":  "node",
-                            "outDir":  "dist",
-                            "rootDir":  ".",
-                            "esModuleInterop":  true,
-                            "forceConsistentCasingInFileNames":  true,
-                            "strict":  true,
-                            "skipLibCheck":  true
-                        },
-    "include":  [
-                    "*.ts",
-                    "workflows/**/*.ts"
-                ]
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "rootDir": ".",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "*.ts",
+    "workflows/**/*.ts"
+  ]
 }

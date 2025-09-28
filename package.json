@@ -1,31 +1,28 @@
-﻿{
-    "name":  "iaz-cockpit-lite",
-    "version":  "1.0.0",
-    "type":  "module",
-    "description":  "",
-    "main":  "dist/runWorkflow.js",
-    "scripts":  {
-                    "build":  "tsc",
-                    "start":  "node dist/runWorkflow.js"
-                },
-    "dependencies":  {
-                         "axios":  "^1.12.2",
-                         "typescript":  "^5.9.2"
-                     },
-    "devDependencies":  {
-
-                        },
-    "repository":  {
-                       "type":  "git",
-                       "url":  "git+https://github.com/beugsbuny/iaz-cockpit.git"
-                   },
-    "keywords":  [
-
-                 ],
-    "author":  "",
-    "license":  "ISC",
-    "bugs":  {
-                 "url":  "https://github.com/beugsbuny/iaz-cockpit/issues"
-             },
-    "homepage":  "https://github.com/beugsbuny/iaz-cockpit#readme"
+{
+  "name": "iaz-cockpit-lite",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "axios": "^1.12.2",
+    "express": "^4.19.2",
+    "typescript": "^5.9.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beugsbuny/iaz-cockpit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beugsbuny/iaz-cockpit/issues"
+  },
+  "homepage": "https://github.com/beugsbuny/iaz-cockpit#readme"
 }

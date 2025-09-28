@@ -1,0 +1,9 @@
+﻿Write-Output "##active_line3##"
+node_modules/
+Write-Output "##active_line4##"
+dist/
+Write-Output "##active_line5##"
+build/
+Write-Output "##active_line6##"
+CON
+Write-Output "##active_line7##"
