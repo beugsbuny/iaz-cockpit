@@ -1,10 +1,12 @@
 FROM node:18
 
 WORKDIR /app
+
+COPY package*.json ./
+RUN npm install
+
 COPY . .
 
-RUN npm install -g typescript
-RUN npm install
-RUN tsc
+RUN npm run build
 
 CMD ["node", "dist/runWorkflow.js"]
